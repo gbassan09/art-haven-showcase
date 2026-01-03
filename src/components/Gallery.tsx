@@ -9,13 +9,15 @@ const artworks = [
     category: "Pintura",
     description: "Descrição da obra de arte. Uma breve explicação sobre a inspiração, técnica utilizada e significado por trás da criação.",
     year: "2024",
+    image: "/placeholder1.png",
   },
   {
-    id: 2,
+    id: 2,  
     title: "Título da Arte 2",
     category: "Ilustração",
     description: "Descrição da obra de arte. Uma breve explicação sobre a inspiração, técnica utilizada e significado por trás da criação.",
     year: "2024",
+    image: "/placeholder2.png",
   },
   {
     id: 3,
@@ -23,6 +25,7 @@ const artworks = [
     category: "Digital",
     description: "Descrição da obra de arte. Uma breve explicação sobre a inspiração, técnica utilizada e significado por trás da criação.",
     year: "2023",
+    image: "/placeholder3.png",
   },
   {
     id: 4,
@@ -30,6 +33,7 @@ const artworks = [
     category: "Aquarela",
     description: "Descrição da obra de arte. Uma breve explicação sobre a inspiração, técnica utilizada e significado por trás da criação.",
     year: "2023",
+    image: "/placeholder4.png",
   },
   {
     id: 5,
@@ -37,6 +41,7 @@ const artworks = [
     category: "Escultura",
     description: "Descrição da obra de arte. Uma breve explicação sobre a inspiração, técnica utilizada e significado por trás da criação.",
     year: "2024",
+    image: "/placeholder5.png",     
   },
   {
     id: 6,
@@ -44,6 +49,7 @@ const artworks = [
     category: "Mixed Media",
     description: "Descrição da obra de arte. Uma breve explicação sobre a inspiração, técnica utilizada e significado por trás da criação.",
     year: "2024",
+    image: "/placeholder6.png", 
   },
 ];
 
@@ -62,7 +68,7 @@ const Gallery = () => {
   };
 
   return (
-    <section id="gallery" className="py-24 md:py-32 bg-background">
+    <section id="gallery" className="py-24 md:py-32 bg-muted/30">
       <div className="container mx-auto px-6">
         {/* Section header */}
         <div className="max-w-2xl mb-16 md:mb-24">
@@ -73,8 +79,7 @@ const Gallery = () => {
             Galeria de <span className="italic font-normal">Obras</span>
           </h2>
           <p className="text-muted-foreground font-body text-lg">
-            Uma coleção de trabalhos selecionados que representam minha jornada 
-            artística e evolução criativa.
+            Uma coleção de trabalhos selecionados que atravessam diferentes momentos e linguagens visuais.
           </p>
         </div>
 
@@ -90,6 +95,8 @@ const Gallery = () => {
                 id={artwork.id}
                 title={artwork.title}
                 category={artwork.category}
+                year={artwork.year}
+                imageSrc={artwork.image}
                 onClick={() => openModal(artwork)}
               />
             </div>

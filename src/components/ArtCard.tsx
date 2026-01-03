@@ -2,26 +2,22 @@ interface ArtCardProps {
   id: number;
   title: string;
   category: string;
+  imageSrc?: string;
+  year?: string;
   onClick: () => void;
 }
 
-const ArtCard = ({ title, category, onClick }: ArtCardProps) => {
+const ArtCard = ({ title, category, imageSrc, year, onClick }: ArtCardProps) => {
   return (
     <article
       onClick={onClick}
-      className="group cursor-pointer relative aspect-[4/5] bg-muted rounded-lg overflow-hidden hover-lift"
+      className="group cursor-pointer relative aspect-[4/5] rounded-lg overflow-hidden hover-lift"
     >
-      {/* Placeholder for artwork */}
-      <div className="absolute inset-0 bg-gradient-to-br from-muted to-muted/80 flex items-center justify-center">
-        <div className="text-center p-6">
-          <div className="w-16 h-16 mx-auto mb-4 border-2 border-dashed border-muted-foreground/30 rounded-full flex items-center justify-center">
-            <span className="text-muted-foreground/50 text-2xl">+</span>
-          </div>
-          <span className="text-muted-foreground/60 text-xs font-body">
-            Adicionar arte
-          </span>
-        </div>
-      </div>
+      <img
+        src={imageSrc || "/placeholder.svg"}
+        alt={title}
+        className="absolute inset-0 w-full h-full object-cover"
+      />
 
       {/* Hover overlay */}
       <div className="absolute inset-0 bg-foreground/0 group-hover:bg-foreground/60 transition-all duration-500" />
@@ -34,6 +30,11 @@ const ArtCard = ({ title, category, onClick }: ArtCardProps) => {
         <h3 className="text-xl font-display text-primary-foreground font-medium">
           {title}
         </h3>
+        {year && (
+          <span className="mt-1 text-xs font-body text-primary-foreground/70 block">
+            {year}
+          </span>
+        )}
       </div>
 
       {/* Corner accent */}

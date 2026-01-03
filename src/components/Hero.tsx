@@ -19,29 +19,26 @@ const Hero = () => {
         <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-primary/5 rounded-full blur-3xl" />
         <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-accent/5 rounded-full blur-3xl" />
       </div>
-
-      {/* Artist Image Placeholder */}
       <div className="absolute inset-0 flex items-center justify-center opacity-20">
-        <div className="w-[500px] h-[600px] border-2 border-dashed border-muted-foreground/30 rounded-lg flex items-center justify-center">
-          <span className="text-muted-foreground font-body text-sm">
-            Imagem da artista
-          </span>
-        </div>
+        <img 
+          src="/hero-image.png" 
+          alt="Gabriely De Bem" 
+          className="w-full h-full object-cover"
+        />
       </div>
 
       {/* Content */}
       <div className="relative z-10 container mx-auto text-center px-6">
         <div className="max-w-3xl mx-auto">
           <p className="text-sm md:text-base font-body text-muted-foreground tracking-[0.3em] uppercase mb-6 animate-fade-in-up">
-            Portfólio
+            Portfólio artístico
           </p>
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-display font-semibold text-foreground leading-[0.9] mb-8 animate-fade-in-up" style={{ animationDelay: "100ms" }}>
-            Arte &<br />
-            <span className="italic font-normal">Expressão</span>
+            Gabriely<br />
+            <span className="italic font-normal">De Bem</span>
           </h1>
           <p className="text-lg md:text-xl font-body text-muted-foreground max-w-xl mx-auto mb-12 animate-fade-in-up" style={{ animationDelay: "200ms" }}>
-            Explorando a beleza através de traços, cores e emoções.
-            Uma jornada visual pela arte contemporânea.
+            Produção artística situada entre prática e pesquisa, valorizando o processo criativo.
           </p>
           
           <button

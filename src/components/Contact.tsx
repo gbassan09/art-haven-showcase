@@ -2,7 +2,7 @@ import { Mail, Instagram, MapPin } from "lucide-react";
 
 const Contact = () => {
   return (
-    <section id="contact" className="py-24 md:py-32 bg-muted/30">
+    <section id="contact" className="py-24 md:py-32 bg-background">
       <div className="container mx-auto px-6">
         <div className="max-w-4xl mx-auto text-center">
           <span className="text-xs font-body text-muted-foreground tracking-widest uppercase mb-4 block">
@@ -29,12 +29,12 @@ const Contact = () => {
                 Email
               </h3>
               <p className="text-muted-foreground font-body text-sm">
-                artista@email.com
+                gabrielydebem.visual@gmail.com
               </p>
             </a>
 
             <a
-              href="https://instagram.com"
+              href="https://www.instagram.com/with_gabys?igsh=NTBxcm01a2txcWFi"
               target="_blank"
               rel="noopener noreferrer"
               className="group p-8 bg-card rounded-lg border border-border hover:border-foreground/20 transition-all duration-300 hover-lift"
@@ -46,7 +46,7 @@ const Contact = () => {
                 Instagram
               </h3>
               <p className="text-muted-foreground font-body text-sm">
-                @artista
+                @with_gabys
               </p>
             </a>
 

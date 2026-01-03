@@ -9,19 +9,19 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
           {/* Logo */}
           <span className="font-display text-2xl font-semibold">
-            Artista
+            Gabriely D Bem
           </span>
 
           {/* Social links */}
           <div className="flex items-center gap-4">
             <a
-              href="mailto:artista@email.com"
+              href="mailto:gabrielydebem.visual@gmail.com"
               className="p-2 opacity-70 hover:opacity-100 transition-opacity"
             >
               <Mail size={20} />
             </a>
             <a
-              href="https://instagram.com"
+              href="https://www.instagram.com/with_gabys?igsh=NTBxcm01a2txcWFi"
               target="_blank"
               rel="noopener noreferrer"
               className="p-2 opacity-70 hover:opacity-100 transition-opacity"

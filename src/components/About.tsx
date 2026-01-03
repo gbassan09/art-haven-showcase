@@ -6,16 +6,11 @@ const About = () => {
           {/* Image placeholder */}
           <div className="relative order-2 lg:order-1">
             <div className="aspect-[4/5] bg-muted rounded-lg overflow-hidden relative">
-              <div className="absolute inset-0 flex items-center justify-center">
-                <div className="text-center">
-                  <div className="w-20 h-20 mx-auto mb-4 border-2 border-dashed border-muted-foreground/30 rounded-full flex items-center justify-center">
-                    <span className="text-muted-foreground/50 text-2xl">+</span>
-                  </div>
-                  <span className="text-muted-foreground/60 text-sm font-body">
-                    Foto da artista
-                  </span>
-                </div>
-              </div>
+              <img 
+                src="/about-image.png" 
+                alt="Gabriely trabalhando" 
+                className="w-full h-full object-cover"
+              />
             </div>
             
             {/* Decorative element */}
@@ -33,19 +28,7 @@ const About = () => {
             
             <div className="space-y-6 text-muted-foreground font-body">
               <p className="text-lg leading-relaxed">
-                Estudante de artes visuais apaixonada por explorar diferentes 
-                técnicas e expressões artísticas. Meu trabalho busca capturar 
-                emoções e contar histórias através de cores, formas e texturas.
-              </p>
-              <p className="leading-relaxed">
-                Desde muito jovem, a arte sempre foi minha forma de expressão 
-                favorita. Através do desenho, pintura e arte digital, busco 
-                criar obras que toquem as pessoas e despertem reflexões.
-              </p>
-              <p className="leading-relaxed">
-                Atualmente, estou desenvolvendo projetos que exploram a 
-                intersecção entre tradição e contemporaneidade, sempre 
-                buscando novas formas de me expressar artisticamente.
+               Estudante de Artes Visuais na Universidade Federal de Juiz de Fora (UFJF). Minha produção se constrói a partir do processo criativo, compreendido como espaço de pesquisa e elaboração poética. Pesquiso materialidade, forma, gesto, transitando entre diferentes linguagens visuais e técnicas. O processo orienta as decisões formais e conceituais das obras, articulando prática artística, reflexão e diálogo com questões contemporâneas da arte.
               </p>
             </div>
 
@@ -53,18 +36,10 @@ const About = () => {
             <div className="grid grid-cols-3 gap-8 mt-12 pt-12 border-t border-border">
               <div>
                 <span className="text-3xl md:text-4xl font-display font-semibold text-foreground block">
-                  50+
+                  15+
                 </span>
                 <span className="text-sm text-muted-foreground font-body">
                   Obras criadas
-                </span>
-              </div>
-              <div>
-                <span className="text-3xl md:text-4xl font-display font-semibold text-foreground block">
-                  5
-                </span>
-                <span className="text-sm text-muted-foreground font-body">
-                  Exposições
                 </span>
               </div>
               <div>

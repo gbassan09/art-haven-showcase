@@ -59,10 +59,10 @@ const Header = ({ isDark, toggleTheme }: HeaderProps) => {
               className="flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors"
             >
               <Mail size={16} />
-              <span>artista@email.com</span>
+              <span>gabrielydebem.visual@gmail.com</span>
             </a>
             <a
-              href="https://instagram.com"
+              href="https://www.instagram.com/with_gabys?igsh=NTBxcm01a2txcWFi"
               target="_blank"
               rel="noopener noreferrer"
               className="p-2 text-muted-foreground hover:text-foreground transition-colors"

@@ -2,7 +2,6 @@ import { useState, useEffect } from "react";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import Gallery from "@/components/Gallery";
-import Carousel from "@/components/Carousel";
 import About from "@/components/About";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
@@ -38,7 +37,6 @@ const Index = () => {
       <main>
         <Hero />
         <Gallery />
-        <Carousel />
         <About />
         <Contact />
       </main>

@@ -7,6 +7,7 @@ interface Artwork {
   category: string;
   description: string;
   year: string;
+  image?: string;
 }
 
 interface ArtModalProps {
@@ -51,16 +52,13 @@ const ArtModal = ({ artwork, isOpen, onClose }: ArtModalProps) => {
         </button>
 
         <div className="grid md:grid-cols-2 gap-0">
-          {/* Image placeholder */}
+          {/* Image */}
           <div className="aspect-square md:aspect-auto bg-muted flex items-center justify-center">
-            <div className="text-center p-8">
-              <div className="w-24 h-24 mx-auto mb-4 border-2 border-dashed border-muted-foreground/30 rounded-full flex items-center justify-center">
-                <span className="text-muted-foreground/50 text-3xl">+</span>
-              </div>
-              <span className="text-muted-foreground/60 text-sm font-body">
-                Imagem da arte
-              </span>
-            </div>
+            <img
+              src={artwork.image || "/placeholder.svg"}
+              alt={artwork.title}
+              className="w-full h-full object-cover"
+            />
           </div>
 
           {/* Content */}
