@@ -20,7 +20,7 @@ const artworks = [
     description: "A obra é um prato de cerâmica com o fundo vazado, que rompe sua função cotidiana. Ao impossibilitar o uso, o objeto se desloca para o simbólico, evocando ausências, fragilidades e falhas nas estruturas sociais. O vazio central deixa de ser falta e se torna discurso, convidando à reflexão sobre consumo, função e o sentido dos objetos comuns.",
     year: "2025",
     image: "/placeholder2.png",
-    technique: "Cerâmica esmaltada",
+    technique: "Cerâmica",
     dimensions: "Ø 14,5 cm",
   },
   {
