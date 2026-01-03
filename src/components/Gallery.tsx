@@ -17,7 +17,7 @@ const artworks = [
     id: 2,  
     title: "Apetite Insaciável",
     category: "Escultura",
-    description: "A obra se apresenta como um prato de cerâmica cujo fundo vazado rompe com sua função utilitária original. Ao impossibilitar o uso cotidiano, o objeto desloca-se para o campo simbólico e social, evocando ausências, falhas e fragilidades nas estruturas que organizam o viver coletivo. O vazio central deixa de ser falta e passa a operar como discurso, convidando à reflexão sobre consumo, função e os sentidos sociais atribuídos aos objetos comuns.",
+    description: "A obra é um prato de cerâmica com o fundo vazado, que rompe sua função cotidiana. Ao impossibilitar o uso, o objeto se desloca para o simbólico, evocando ausências, fragilidades e falhas nas estruturas sociais. O vazio central deixa de ser falta e se torna discurso, convidando à reflexão sobre consumo, função e o sentido dos objetos comuns.",
     year: "2025",
     image: "/placeholder2.png",
     technique: "Cerâmica esmaltada",
