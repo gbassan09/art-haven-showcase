@@ -8,6 +8,8 @@ interface Artwork {
   description: string;
   year: string;
   image?: string;
+  technique?: string;
+  dimensions?: string;
 }
 
 interface ArtModalProps {
@@ -75,10 +77,10 @@ const ArtModal = ({ artwork, isOpen, onClose }: ArtModalProps) => {
 
             <div className="mt-8 pt-8 border-t border-border">
               <p className="text-sm text-muted-foreground font-body">
-                <span className="font-medium text-foreground">Técnica:</span> A ser definida
+                <span className="font-medium text-foreground">Técnica:</span> {artwork.technique ?? "A ser definida"}
               </p>
               <p className="text-sm text-muted-foreground font-body mt-2">
-                <span className="font-medium text-foreground">Dimensões:</span> A ser definida
+                <span className="font-medium text-foreground">Dimensões:</span> {artwork.dimensions ?? "A ser definida"}
               </p>
             </div>
           </div>

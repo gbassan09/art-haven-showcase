@@ -19,7 +19,7 @@ const Contact = () => {
           {/* Contact methods */}
           <div className="grid md:grid-cols-3 gap-8">
             <a
-              href="mailto:artista@email.com"
+              href="mailto:gabrielydebem.visual@gmail.com"
               className="group p-8 bg-card rounded-lg border border-border hover:border-foreground/20 transition-all duration-300 hover-lift"
             >
               <div className="w-14 h-14 mx-auto mb-6 rounded-full bg-muted flex items-center justify-center group-hover:bg-foreground group-hover:text-background transition-colors duration-300">

@@ -117,14 +117,14 @@ const Header = ({ isDark, toggleTheme }: HeaderProps) => {
               ))}
               <div className="px-6 py-4 flex items-center gap-4 border-t border-border mt-4">
                 <a
-                  href="mailto:artista@email.com"
+                  href="mailto:gabrielydebem.visual@gmail.com"
                   className="flex items-center gap-2 text-sm text-muted-foreground"
                 >
                   <Mail size={16} />
-                  <span>artista@email.com</span>
+                  <span>gabrielydebem.visual@gmail.com</span>
                 </a>
                 <a
-                  href="https://instagram.com"
+                  href="https://www.instagram.com/with_gabys?igsh=NTBxcm01a2txcWFi"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="p-2 text-muted-foreground"
